@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --rm -v "$PWD/Day_$1":/usr/src/app -w /usr/src/app python python aoc2021_${1}.py

@@ -1,0 +1,4 @@
+#!/bin/bash
+cookieFile=$(cat "./cookie")
+mkdir Day_${1}
+curl -v "https://adventofcode.com/2021/day/${1}/input" --cookie "session=$cookieFile" > "Day_${1}/input_${1}"
