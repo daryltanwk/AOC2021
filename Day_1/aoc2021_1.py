@@ -17,3 +17,16 @@ for currentIndex in range(len(inputValues)-1):
         increaseCount += 1
 
 print("Increase Count: ", increaseCount)
+
+"""
+PUZZLE TWO
+"""
+increaseCount2 = 0
+for currentIndex2 in range(len(inputValues)-3):
+    currentSum = inputValues[currentIndex2]+inputValues[currentIndex2+1]+inputValues[currentIndex2+2]
+    nextSum = inputValues[currentIndex2+1]+inputValues[currentIndex2+2]+inputValues[currentIndex2+3]
+
+    if nextSum - currentSum > 0:
+        increaseCount2 += 1
+
+print("Increase Count 2: ", increaseCount2)
