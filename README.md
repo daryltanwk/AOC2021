@@ -1,5 +1,6 @@
 # Advent of Code 2021
 A personal repo to store and run AOC solutions in python!
+Advent of Code: https://adventofcode.com/2021
 
 ## Pre-requisites
 1. Docker
@@ -21,7 +22,7 @@ Run the following:
 ./getInput 4
 ```
 This creates a folder `Day_4` and downloads the input file into the folder as `input_4`
-#### <b>IMPT: Input values are different for each user!</b>
+<b>IMPT: Input values are different for each user!</b>
 ---
 
 ### Testing solutions
