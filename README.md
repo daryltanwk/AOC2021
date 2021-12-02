@@ -26,7 +26,7 @@ This creates a folder `Day_4` and downloads the input file into the folder as `i
 ---
 
 ### Testing solutions
-1. Place your main function into the appropriate folder and name it aoc2021_<kbd>Day</kbd>.
+1. Place your main function into the appropriate `Day_X` folder and name it `aoc2021_X`.
     - For example, Day 4's solution should be in the `Day_4` folder and named as `aoc2021_4.py`
 2. Run the `pyRun` script as such:
 ``` bash
