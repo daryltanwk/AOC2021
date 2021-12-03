@@ -27,7 +27,7 @@ This creates a folder `Day_4` and downloads the input file into the folder as `i
 <b>IMPT: Input values are different for each user!</b>
 
 ### Testing solutions
-1. Place your main function into the appropriate `Day_X` folder and name it `aoc2021_X`.
+1. Place your main function into the appropriate `Day_X` folder and name it `aoc2021_X.py`.
     - For example, Day 4's solution should be in the `Day_4` folder and named as `aoc2021_4.py`
 2. Run the `pyRun` script as such:
 ``` bash
