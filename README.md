@@ -1,5 +1,6 @@
 # Advent of Code 2021
 A personal repo to store and run AOC solutions in python!
+
 Advent of Code: https://adventofcode.com/2021
 
 ## Pre-requisites
@@ -14,7 +15,7 @@ Advent of Code: https://adventofcode.com/2021
 2. Clone this repo to wherever
 3. Paste the session id into the `cookie_temp` file and rename it to `cookie`
 4. Done!
----
+
 ### Getting Inputs for Day X
 Run the following:
 ``` bash
@@ -22,8 +23,8 @@ Run the following:
 ./getInput 4
 ```
 This creates a folder `Day_4` and downloads the input file into the folder as `input_4`
+
 <b>IMPT: Input values are different for each user!</b>
----
 
 ### Testing solutions
 1. Place your main function into the appropriate `Day_X` folder and name it `aoc2021_X`.
