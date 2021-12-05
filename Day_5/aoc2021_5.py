@@ -11,26 +11,42 @@ for rawLine in inputFile:
     """
     PUZZLE ONE
     """
-    # Check if line is Horizontal (X value does not change)
+    xDirection = 1 if start[0] < end[0] else -1
+    yDirection = 1 if start[1] < end[1] else -1
+    # Check if line is Horizontal (Y value does not change)
     if start[1] == end[1]:
-        direction = 1 if start[0] < end[0] else -1
         currentX = start[0]
         for x in range(abs(start[0]-end[0])+1):
             mapOfSea[currentX][start[1]] += 1
-            currentX += direction
-    # Check if line is Vertical (Y value does not change)
+            currentX += xDirection
+
+    # Check if line is Vertical (X value does not change)
     elif start[0] == end[0]:
-        direction = 1 if start[1] < end[1] else -1
         currentY = start[1]
         for x in range(abs(start[1]-end[1])+1):
             mapOfSea[start[0]][currentY] += 1
-            currentY += direction
+            currentY += yDirection
+
+    ###
+    # PUZZLE TWO START - COMMENT OUT THIS SECTION FOR PUZZLE ONE SOLUTION
+    ###
+    # Handle Diagonals (none of the above cases)
+    else:
+        currentX = start[0]
+        currentY = start[1]
+        for x in range(abs(start[0]-end[0])+1):
+            mapOfSea[currentX][currentY] += 1
+            currentX += xDirection
+            currentY += yDirection
+    ###
+    # PUZZLE TWO END - COMMENT OUT THIS SECTION FOR PUZZLE ONE SOLUTION
+    ###
 
 inputFile.close()
 
-puz1Counter = 0
+puzzleCounter = 0
 for a in mapOfSea:
     for b in a:
         if b >= 2:
-            puz1Counter += 1
-print("Puzzle One Answer:", puz1Counter)
+            puzzleCounter += 1
+print("Puzzle Answer:", puzzleCounter)
